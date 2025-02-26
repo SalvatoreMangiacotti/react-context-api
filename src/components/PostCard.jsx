@@ -8,7 +8,7 @@ export default function PostCard(props) {
 
         <>
 
-            <li className="postCard">
+            <li className="post_card">
 
                 <img src={post.image} />
 
