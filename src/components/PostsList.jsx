@@ -6,6 +6,10 @@ import { useState, useEffect } from "react";
 
 import axios from "axios";
 
+// PostCard
+
+import PostCard from "./PostCard";
+
 
 export default function PostsList() {
 
@@ -47,17 +51,11 @@ export default function PostsList() {
 
                 {
 
-                    postsList.map((post) =>
+                    postsList.map((post) => (
 
-                        <li key={post.id}>
+                        <PostCard key={post.id} post={post} />
 
-                            <img src={post.image} />
-
-                            <h2>{post.title}</h2>
-
-                            <p>{post.content}</p>
-
-                        </li>
+                    )
 
                     )}
 
