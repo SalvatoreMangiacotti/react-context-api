@@ -10,9 +10,14 @@ import DefaultLayout from './layouts/DefaultLayout'
 
 import PostsPage from './pages/PostsPage'
 
+// AboutUs Page
+
+import AboutUsPage from './pages/AboutUsPage'
+
 // Css
 
 import './App.css'
+
 
 
 function App() {
@@ -25,7 +30,13 @@ function App() {
 
         <Routes>
 
-          <Route path='/' element={<PostsPage />} />
+          <Route element={<DefaultLayout />}>
+
+            <Route path='/' element={<PostsPage />} />
+
+            <Route path='/about' element={<AboutUsPage />} />
+
+          </Route>
 
         </Routes>
 
