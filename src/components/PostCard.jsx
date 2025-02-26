@@ -2,7 +2,7 @@
 
 export default function PostCard(props) {
 
-    const post = props.post;
+    const { post } = props;
 
     return (
 
